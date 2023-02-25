@@ -2,6 +2,7 @@
   <div id="app">
     <OHeader />
     Teste
+    Brendo
     <router-view />
     <OFooter />
   </div>
