@@ -3,6 +3,7 @@
     <OHeader />
     Teste
     <p>Brendo 1</p>
+    <p>Brendo 2</p>
     <router-view />
     <OFooter />
   </div>
