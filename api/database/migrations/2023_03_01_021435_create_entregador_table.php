@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEntregadorsTable extends Migration
+class CreateEntregadorTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,12 @@ class CreateEntregadorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('entregadors', function (Blueprint $table) {
-            $table->id();
+        Schema::create('entregador', function (Blueprint $table) {
+            $table->bigIncrements('cd_entregador');
+            $table->string('nome', 50);
+            $table->string('nr_entregador');
+            $table->string('nr_pedido');
+            $table->string('telefone', 11);
             $table->timestamps();
         });
     }
@@ -26,6 +30,6 @@ class CreateEntregadorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('entregadors');
+        Schema::dropIfExists('entregador');
     }
 }
