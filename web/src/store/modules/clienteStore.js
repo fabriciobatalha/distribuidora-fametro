@@ -12,8 +12,8 @@ export default {
     },
   },
   actions: {
-    pegarClientes(context) {
-      const response = api.clienteProvider.getAll();
+    async pegarClientes(context) {
+      const response = await api.clienteProvider.getAll();
 
       console.log('Clientes: ', response);
 
