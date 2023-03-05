@@ -14,4 +14,4 @@ class PedidoProvider extends BaseProvider {
   }
 }
 
-export const funcionarioProvider = new PedidoProvider();
+export const pedidoProvider = new PedidoProvider();
