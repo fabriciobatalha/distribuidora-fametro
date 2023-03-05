@@ -48,11 +48,11 @@ export default {
 
       context.commit('SET_CLIENTES', response);
     },
-    cadastrarCliente(_, payload) {
+    async cadastrarCliente({ dispatch }, payload) {
       console.log('payload', payload);
       console.log('sucesso 2');
-      api.clienteProvider.saveClient(payload);
-      this.pegarClientes();
+      await api.clienteProvider.saveClient(payload);
+      await dispatch('pegarClientes');
     },
   },
 };
