@@ -1,12 +1,14 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
+import clienteStore from './modules/clienteStore';
+
 Vue.use(Vuex);
 
-export default new Vuex.Store({
-  state: {},
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: {},
+const useVuex = new Vuex.Store({
+  modules: {
+    clienteStore,
+  },
 });
+
+export default useVuex;
