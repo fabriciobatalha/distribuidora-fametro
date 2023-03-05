@@ -17,7 +17,7 @@ export default {
 
       context.commit('SET_PEDIDO', response);
     },
-    async cadastrarEntregador({ dispatch }, payload) {
+    async cadastrarPedido({ dispatch }, payload) {
       await api.pedidoProvider.savePedido(payload);
       await dispatch('pegarPedidos');
     },
