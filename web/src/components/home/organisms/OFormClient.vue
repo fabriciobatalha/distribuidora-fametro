@@ -8,8 +8,6 @@
     <v-btn color="success" class="mr-4" @click="cadastrarCliente">
       Cadastrar
     </v-btn>
-
-    <v-btn color="error" class="mr-4" @click="resetar"> Reset Form </v-btn>
   </v-form>
 </template>
 
