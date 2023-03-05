@@ -6,7 +6,7 @@
         <OFormPedido />
         <OTableGeneral
           :headers="cabecalho"
-          :dadosDaTabela="listaPedidos"
+          :dadosDaTabela="listaPedido"
           class="mt-10"
         />
       </v-expansion-panel-content>
@@ -26,7 +26,7 @@ export default {
     OTableGeneral,
   },
   computed: {
-    ...mapState('pedidoStore', ['listaPedidos']),
+    ...mapState('pedidoStore', ['listaPedido']),
     cabecalho() {
       return [
         {
