@@ -1,4 +1,10 @@
 export { default as OFormClient } from './OFormClient.vue';
 export { default as OFormEmployer } from './OFormEmployer.vue';
+export { default as OFormProduct } from './OFormProduct.vue';
+export { default as OFormPedido } from './OFormPedido.vue';
+export { default as OFormEntregador } from './OFormEntregador.vue';
 export { default as OSectionClient } from './OSectionClient.vue';
 export { default as OSectionEmployer } from './OSectionEmployer.vue';
+export { default as OSectionProduct } from './OSectionProduct.vue';
+export { default as OSectionEntregador } from './OSectionEntregador.vue';
+export { default as OSectionPedido } from './OSectionPedido.vue';
