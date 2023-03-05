@@ -2,6 +2,7 @@
   <v-form class="o-form-client">
     <v-text-field v-model="form.name" label="Nome" required />
     <v-text-field v-model="form.cargo" label="Cargo" required />
+    <v-text-field v-model="form.endereco" label="Endereço" required />
     <v-text-field v-model="form.cpf" label="CPF" required />
     <v-text-field v-model="form.telefone" label="Telefone" required />
 
@@ -11,6 +12,8 @@
         form.name === '' ||
         form.cargo === null ||
         form.cargo === '' ||
+        form.endereco === null ||
+        form.endereco === '' ||
         form.cpf === null ||
         form.cpf === '' ||
         form.telefone === null ||
@@ -36,6 +39,7 @@ export default {
       form: {
         name: null,
         cargo: null,
+        endereco: null,
         cpf: null,
         telefone: null,
         cd_funcionarios: 1,
