@@ -49,6 +49,7 @@ export default {
       context.commit('SET_CLIENTES', response);
     },
     cadastrarCliente(_, payload) {
+      console.log('payload', payload);
       console.log('sucesso 2');
       api.clienteProvider.saveClient(payload);
       this.pegarClientes();

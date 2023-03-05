@@ -45,7 +45,7 @@ export default {
     ...mapActions('clienteStore', ['cadastrarCliente']),
     async onCadastrarCliente() {
       try {
-        await this.cadastrarCliente();
+        await this.cadastrarCliente(this.form);
         console.log('Sucesso');
       } catch (error) {
         console.log('Erro: ', error);
