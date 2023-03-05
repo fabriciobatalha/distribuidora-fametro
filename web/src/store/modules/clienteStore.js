@@ -15,6 +15,8 @@ export default {
     pegarClientes(context) {
       const response = api.clienteProvider.getAll();
 
+      console.log('Clientes: ', response);
+
       // const response = [
       //   {
       //     id: 0,
