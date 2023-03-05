@@ -1,5 +1,5 @@
 <template>
-  <div class="o-table-client">
+  <div class="o-table-general">
     <v-data-table
       :headers="headers"
       :items="desserts"
@@ -11,13 +11,13 @@
 
 <script>
 export default {
-  name: 'OTableCLient',
+  name: 'OTableGeneral',
 
   components: {},
 };
 </script>
 
 <style lang="css">
-.o-table-client {
+.o-table-general {
 }
 </style>
