@@ -1,17 +1,19 @@
 <template>
   <div class="t-home-main">
-    <OSectionClient />
+    <OSectionEmployer />
+    <OSectionClient class="mt-5" />
   </div>
 </template>
 
 <script>
-import { OSectionClient } from './../organisms';
+import { OSectionClient, OSectionEmployer } from './../organisms';
 
 export default {
   name: 'THomeMain',
 
   components: {
     OSectionClient,
+    OSectionEmployer,
   },
 };
 </script>
