@@ -14,6 +14,10 @@ export default {
   name: 'OTableGeneral',
   components: {},
   props: {
+    headers: {
+      type: Array,
+      required: true,
+    },
     dadosDaTabela: {
       type: Array,
       required: true,
