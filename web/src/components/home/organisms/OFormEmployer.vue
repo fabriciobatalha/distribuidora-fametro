@@ -1,14 +1,14 @@
 <template>
   <v-form class="o-form-client">
-    <v-text-field v-model="form.nome" label="Nome" required />
+    <v-text-field v-model="form.name" label="Nome" required />
     <v-text-field v-model="form.cargo" label="Cargo" required />
     <v-text-field v-model="form.cpf" label="CPF" required />
     <v-text-field v-model="form.telefone" label="Telefone" required />
 
     <v-btn
       :disabled="
-        form.nome === null ||
-        form.nome === '' ||
+        form.name === null ||
+        form.name === '' ||
         form.cargo === null ||
         form.cargo === '' ||
         form.cpf === null ||
@@ -34,7 +34,7 @@ export default {
   data() {
     return {
       form: {
-        nome: null,
+        name: null,
         cargo: null,
         cpf: null,
         telefone: null,
