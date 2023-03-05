@@ -1,2 +1,3 @@
-export { default as OSectionRegistrationAndListing } from './OSectionRegistrationAndListing.vue';
-export { default as OListGeneral } from './OListGeneral.vue';
+export { default as OTableClient } from './OTableClient.vue';
+export { default as OFormClient } from './OFormClient.vue';
+export { default as OSectionClient } from './OSectionClient.vue';
