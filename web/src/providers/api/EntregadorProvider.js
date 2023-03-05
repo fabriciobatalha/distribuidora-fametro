@@ -2,7 +2,7 @@ import BaseProvider from '@/providers/BaseProvider';
 
 class EntregadorProvider extends BaseProvider {
   constructor() {
-    super('api/entregadores');
+    super('api/entregador');
   }
 
   async getAll() {
