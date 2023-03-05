@@ -14,6 +14,7 @@ export default {
   actions: {
     async pegarEntregadores(context) {
       const response = await api.entregadorProvider.getAll();
+      console.log('TESTE ', response);
 
       context.commit('SET_ENTREGADOR', response);
     },
