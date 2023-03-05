@@ -1,10 +1,10 @@
 <template>
   <v-expansion-panels class="o-section-client">
     <v-expansion-panel>
-      <v-expansion-panel-header> Item </v-expansion-panel-header>
+      <v-expansion-panel-header> Secao Cliente </v-expansion-panel-header>
       <v-expansion-panel-content>
         <OFormClient />
-        <OTableGeneral />
+        <OTableGeneral class="mt-10" />
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
