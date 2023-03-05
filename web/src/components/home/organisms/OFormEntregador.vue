@@ -28,7 +28,7 @@ export default {
   data() {
     return {
       form: {
-        cd_entregador: 1,
+        cd_entregador: null,
         nome: null,
         nr_entregador: 1,
         nr_pedido: 1,

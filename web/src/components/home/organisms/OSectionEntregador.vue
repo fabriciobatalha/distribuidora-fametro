@@ -36,18 +36,6 @@ export default {
           value: 'nome',
         },
         {
-          text: 'Entregador',
-          align: 'start',
-          sortable: false,
-          value: 'entregador',
-        },
-        {
-          text: 'Pedido',
-          align: 'start',
-          sortable: false,
-          value: 'pedido',
-        },
-        {
           text: 'Telefone',
           align: 'start',
           sortable: false,
