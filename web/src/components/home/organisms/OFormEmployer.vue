@@ -38,6 +38,7 @@ export default {
         cargo: null,
         cpf: null,
         telefone: null,
+        cd_funcionarios: 1,
       },
     };
   },
