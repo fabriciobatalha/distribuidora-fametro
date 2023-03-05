@@ -10,7 +10,7 @@ class ClienteProvider extends BaseProvider {
   }
 
   async saveClient(data) {
-    return this.post(`${this.path}/`, data);
+    return this.post(`${this.path}/`, { ...data });
   }
 }
 
