@@ -2,7 +2,7 @@
   <div class="o-table-general">
     <v-data-table
       :headers="headers"
-      :items="desserts"
+      :items="dadosDaTabela"
       :items-per-page="5"
       class="elevation-1"
     ></v-data-table>
@@ -12,8 +12,13 @@
 <script>
 export default {
   name: 'OTableGeneral',
-
   components: {},
+  props: {
+    dadosDaTabela: {
+      type: Array,
+      required: true,
+    },
+  },
 };
 </script>
 

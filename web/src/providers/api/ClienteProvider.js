@@ -5,8 +5,8 @@ class ClienteProvider extends BaseProvider {
     super('api/clientes');
   }
 
-  async getAll(data) {
-    return this.get(`${this.path}/`, data);
+  async getAll() {
+    return this.get(`${this.path}/`);
   }
 
   async save(data) {

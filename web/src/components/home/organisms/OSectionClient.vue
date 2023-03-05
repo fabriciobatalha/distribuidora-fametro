@@ -4,7 +4,7 @@
       <v-expansion-panel-header> Secao Cliente </v-expansion-panel-header>
       <v-expansion-panel-content>
         <OFormClient />
-        <OTableGeneral class="mt-10" />
+        <OTableGeneral :dadosDaTabela="listaClientes" class="mt-10" />
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>

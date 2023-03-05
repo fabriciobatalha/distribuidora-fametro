@@ -1,17 +1,21 @@
-// import api from '@/providers/api';
+import api from '@/providers/api';
 
 export default {
   namespaced: true,
-  state: {},
+  state: {
+    listaClientes: [],
+  },
   getters: {},
   mutations: {
-    SET_USERS(state, payload) {
-      state.users = payload;
+    SET_CLIENTES(state, payload) {
+      state.listaClientes = payload;
     },
   },
   actions: {
-    setUsers(context, payload) {
-      context.commit('SET_USERS', payload);
+    pegarClientes(context) {
+      const response = api.clienteProvider.getAll();
+
+      context.commit('SET_CLIENTES', response);
     },
   },
 };
