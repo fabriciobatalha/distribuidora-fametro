@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { mapState } from 'vuex';
+import { mapActions } from 'vuex';
 
 export default {
   name: 'OFormClient',
@@ -42,7 +42,7 @@ export default {
     };
   },
   methods: {
-    ...mapState('clienteStore', ['cadastrarCliente']),
+    ...mapActions('clienteStore', ['cadastrarCliente']),
     async onCadastrarCliente() {
       try {
         await this.cadastrarCliente();
