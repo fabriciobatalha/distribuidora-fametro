@@ -1,18 +1,12 @@
 <template>
   <v-form class="o-form-client">
     <v-text-field v-model="form.nome" label="Nome" required />
-    <v-text-field v-model="form.entregador" label="Entregador" required />
-    <v-text-field v-model="form.pedido" label="Pedido" required />
     <v-text-field v-model="form.telefone" label="Telefone" required />
 
     <v-btn
       :disabled="
         form.nome === null ||
         form.nome === '' ||
-        form.entregador === null ||
-        form.entregador === '' ||
-        form.pedido === null ||
-        form.pedido === '' ||
         form.telefone === null ||
         form.telefone === ''
       "
@@ -34,9 +28,10 @@ export default {
   data() {
     return {
       form: {
+        cd_entregador: 1,
         nome: null,
-        entregador: null,
-        pedido: null,
+        nr_entregador: 1,
+        nr_pedido: 1,
         telefone: null,
       },
     };
