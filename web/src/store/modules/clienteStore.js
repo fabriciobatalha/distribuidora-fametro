@@ -1,4 +1,4 @@
-// import api from '@/providers/api';
+import api from '@/providers/api';
 
 export default {
   namespaced: true,
@@ -47,6 +47,9 @@ export default {
       ];
 
       context.commit('SET_CLIENTES', response);
+    },
+    cadastrarCliente(_, payload) {
+      api.clienteProvider.saveClient(payload);
     },
   },
 };

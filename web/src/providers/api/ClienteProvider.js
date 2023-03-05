@@ -9,12 +9,8 @@ class ClienteProvider extends BaseProvider {
     return this.get(`${this.path}/`);
   }
 
-  async save(data) {
+  async saveClient(data) {
     return this.post(`${this.path}/`, data);
-  }
-
-  async delete(data) {
-    return this.delete(`${this.path}/${data}/`);
   }
 }
 
