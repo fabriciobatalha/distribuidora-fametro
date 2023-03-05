@@ -6,10 +6,9 @@
         <OFormEntregador />
         <OTableGeneral
           :headers="cabecalho"
-          :dadosDaTabela="listaEntregadores"
+          :dadosDaTabela="listaEntregador"
           class="mt-10"
         />
-        dubug {{ listaEntregadores }}
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
@@ -27,7 +26,7 @@ export default {
     OTableGeneral,
   },
   computed: {
-    ...mapState('entregadorStore', ['listaEntregadores']),
+    ...mapState('entregadorStore', ['listaEntregador']),
     cabecalho() {
       return [
         {
