@@ -9,6 +9,7 @@
           :dadosDaTabela="listaEntregadores"
           class="mt-10"
         />
+        dubug {{ listaEntregadores }}
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>
