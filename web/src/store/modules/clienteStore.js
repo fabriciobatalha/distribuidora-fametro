@@ -50,6 +50,7 @@ export default {
     },
     cadastrarCliente(_, payload) {
       api.clienteProvider.saveClient(payload);
+      this.pegarClientes();
     },
   },
 };
