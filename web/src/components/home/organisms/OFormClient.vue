@@ -46,7 +46,6 @@ export default {
     async onCadastrarCliente() {
       try {
         await this.cadastrarCliente(this.form);
-        console.log('Sucesso');
       } catch (error) {
         console.log('Erro: ', error);
       }

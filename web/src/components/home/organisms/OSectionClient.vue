@@ -61,7 +61,6 @@ export default {
     async onPegarClientes() {
       try {
         await this.pegarClientes();
-        console.log('Sucesso');
       } catch (error) {
         console.log('Erro: ', error);
       }
