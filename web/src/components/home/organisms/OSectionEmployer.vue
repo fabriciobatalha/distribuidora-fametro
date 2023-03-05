@@ -33,7 +33,7 @@ export default {
           text: 'Nome',
           align: 'start',
           sortable: false,
-          value: 'nome',
+          value: 'name',
         },
         {
           text: 'Endereço',
